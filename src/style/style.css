@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --icon-color-1: rgb(0, 151, 230);
+  --icon-color-2: rgb(255, 255, 255);
+  --background-color-1: 135deg, #0097e6 0%, #00a8ff 100%;
+  --background-color-2: rgb(255, 255, 255);
+  --first-font-color: rgb(255, 255, 255);
+  --second-font-color: rgb(75, 75, 75);
+
+  --main-heading-font: 3.5rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: 'Rubik', 'Poppins', sans-serif;
+}
+
+.first-part {
+  background: linear-gradient(var(--background-color-1));
+  color: var(--first-font-color);
+}
+
+.second-part {
+  background-color: var(--background-color-2);
+  color: var(--second-font-color);
+}
+
+.search-icon,
+.lock-icon {
+  padding: 10px 15px;
+  background-color: var(--icon-color-2);
+  color: var(--icon-color-1);
+  border-radius: 100px;
+}
+
+.bin-icon {
+  background-color: var(--icon-color-1);
+  padding: 10px 15px;
+  color: var(--icon-color-2);
+  border-radius: 100px;
+  font-size: larger;
+}
+
+.card-icon {
+  color: var(--icon-color-1);
+}
+
+.main-container {
+  height: 100%;
+}
+
+.main-heading h1 {
+  font-size: var(--main-heading-font);
+  line-height: var(--main-heading-font);
+  font-weight: bold;
+}
