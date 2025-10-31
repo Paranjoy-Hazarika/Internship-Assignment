@@ -9,13 +9,21 @@
   --second-font-color: rgb(75, 75, 75);
 
   --main-heading-font: 3.5rem;
+  --content-font: 1rem;
 }
 
 * {
   padding: 0;
   margin: 0;
   border: none;
+  
   font-family: 'Rubik', 'Poppins', sans-serif;
+}
+
+.first-part,
+.second-part {
+  height: 100%;
+  font-size: var(--content-font);
 }
 
 .first-part {
@@ -26,6 +34,15 @@
 .second-part {
   background-color: var(--background-color-2);
   color: var(--second-font-color);
+}
+
+.first-content,
+.second-content {
+  width: 75%;
+}
+
+.main-heading {
+  width: 75% !important;
 }
 
 .search-icon,
@@ -56,4 +73,40 @@
   font-size: var(--main-heading-font);
   line-height: var(--main-heading-font);
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --main-heading-font: 3rem;
+    --content-font: 0.95rem;
+  }
+
+  .first-part,
+  .second-part {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .first-content,
+  .second-content {
+    width: 90%;
+  }
+  
+  .header-content {
+    width: 90% !important;
+    padding: 10px;
+  }
+
+  .header-content h3 {
+    margin: 0;
+  }
+
+  .main-heading {
+    width: 80% !important;
+  }
+
+  .hamburger-menu i {
+    font-size: 2rem;
+    color: var(--icon-color-1);
+  }
 }
