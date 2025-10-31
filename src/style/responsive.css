@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  :root {
+    --main-heading-font: 3rem;
+    --content-font: 0.95rem;
+  }
+
+  .first-part,
+  .second-part {
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .first-content,
+  .second-content {
+    width: 90%;
+  }
+  
+  .header-content {
+    width: 90% !important;
+    padding: 10px;
+  }
+
+  .header-content h3 {
+    margin: 0;
+  }
+
+  .main-heading {
+    width: 80% !important;
+  }
+
+  .hamburger-menu i {
+    font-size: 2rem;
+    color: var(--icon-color-1);
+  }
+}
