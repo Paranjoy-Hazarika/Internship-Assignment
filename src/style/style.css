@@ -78,6 +78,26 @@
 .sidebar {
   background-color: var(--background-color-2);
   transform: translateX(100%);
+  z-index: 10;
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.active {
+  display: block !important;
+  opacity: 1;
 }

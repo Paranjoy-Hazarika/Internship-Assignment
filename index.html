@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>internship-assignment</title>
   </head>
@@ -20,7 +20,7 @@
         </div>
 
         <!-- SideBar -->
-         <div class="d-flex d-md-none h-100 w-75 position-fixed top-0 end-0 sidebar flex-column justify-content-start align-items-start p-3 gap-5">
+         <div class="d-flex d-md-none h-100 w-75 position-fixed top-0 end-0 sidebar flex-column justify-content-start align-items-start p-3 gap-5" aria-expanded="false">
           <i class="bi bi-x-lg text-center sidebar-cls"></i>
           <div class="d-flex flex-column align-items-start gap-4 sidebar-links">
             <h5>Lorem 1</h5>
@@ -29,6 +29,8 @@
             <h5>Lorem 4</h5>
           </div>
          </div>
+
+         <div class="overlay d-none"></div>
 
         <!-- First Column -->
         <div class="first-part col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
@@ -95,6 +97,7 @@
       </div>
     </div>
 
+    <!-- Script -->
     <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
