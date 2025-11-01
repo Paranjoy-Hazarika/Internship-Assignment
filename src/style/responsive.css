@@ -32,4 +32,11 @@
     font-size: 2rem;
     color: var(--icon-color-1);
   }
+
+  .sidebar i {
+    font-size: 1.5rem;
+    height: 30px;
+    width: 30px;
+    color: var(--icon-color-1);
+  }
 }

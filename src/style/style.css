@@ -74,3 +74,10 @@
   line-height: var(--main-heading-font);
   font-weight: bold;
 }
+
+.sidebar {
+  background-color: var(--background-color-2);
+  transform: translateX(100%);
+
+  transition: all 0.2s ease-in-out;
+}
